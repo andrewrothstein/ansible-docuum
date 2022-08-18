@@ -1,0 +1,7 @@
+---
+# vars file for docuum
+docuum_platform: '{{ docuum_arch }}-{{ docuum_os }}'
+docuum_url: '{{ docuum_mirror }}/v{{ docuum_ver }}/docuum-{{ docuum_platform }}{{ docuum_dotexe | default("") }}'
+docuum_install_exe: '{{ docuum_install_dir }}/docuum-{{ docuum_ver }}-{{ docuum_platform }}{{ docuum_dotexe | default("") }}'
+docuum_link: '{{ docuum_install_dir }}/docuum'
+docuum_checksum: '{{ docuum_checksums[docuum_ver][docuum_platform] }}'

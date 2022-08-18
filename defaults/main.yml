@@ -1,0 +1,17 @@
+---
+# defaults file for docuum
+docuum_ver: 0.21.1
+docuum_os: unknown-linux-gnu
+docuum_arch: x86_64
+docuum_mirror: https://github.com/stepchowfun/docuum/releases/download
+docuum_install_dir: /usr/local/bin
+docuum_checksums:
+  '0.21.1':
+    # https://github.com/stepchowfun/docuum/releases/download/v0.21.1/docuum-x86_64-apple-darwin
+    x86_64-apple-darwin: sha256:078e85abd8068765e2cedd48935fefb78c020054aa3987decfd3cd09832319ce
+    # https://github.com/stepchowfun/docuum/releases/download/v0.21.1/docuum-x86_64-unknown-linux-gnu
+    x86_64-unknown-linux-gnu: sha256:fae4955eac096aeb56d11ca2f6a3a568b376326943f8c3444517322989533926
+    # https://github.com/stepchowfun/docuum/releases/download/v0.21.1/docuum-x86_64-unknown-linux-musl
+    x86_64-unknown-linux-musl: sha256:1cb0005ecb64172bf50fab6cc925c7ed56c2f90e1c016a3c48012d46f1bc0cc9
+    # https://github.com/stepchowfun/docuum/releases/download/v0.21.1/docuum-x86_64-pc-windows-msvc.exe
+    x86_64-pc-windows-msvc: sha256:8ddc091dc2c3152cee2dd8eaeef11bfcb0b87cf578bc846f6ce8f56415537607
