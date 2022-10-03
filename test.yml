@@ -1,5 +1,9 @@
 ---
 - hosts: all
+  vars:
+    docuum_config:
+      enable: false
+      activate: false
   roles:
   - role: '{{ playbook_dir }}'
   tasks:

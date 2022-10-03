@@ -24,3 +24,5 @@
     src: '{{ docuum_install_exe }}'
     dest: '{{ docuum_link }}'
     state: link
+- include_tasks: service-account.yml
+- include_tasks: '{{ docuum_supervisor | default("systemd") }}.yml'

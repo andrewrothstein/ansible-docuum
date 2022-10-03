@@ -1,10 +1,18 @@
 ---
 # defaults file for docuum
 docuum_ver: 0.21.1
-docuum_os: unknown-linux-gnu
-docuum_arch: x86_64
+docuum_os_map:
+  Linux: unknown-linux
+  Windows: pc-windows-msvc
+  Darwin: apple-darwin
 docuum_mirror: https://github.com/stepchowfun/docuum/releases/download
 docuum_install_dir: /usr/local/bin
+
+docuum_config:
+  enable: true
+  activate: true
+  threshold: 10GB
+
 docuum_checksums:
   '0.21.1':
     # https://github.com/stepchowfun/docuum/releases/download/v0.21.1/docuum-x86_64-apple-darwin

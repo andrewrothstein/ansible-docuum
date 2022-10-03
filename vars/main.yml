@@ -1,5 +1,7 @@
 ---
 # vars file for docuum
+docuum_os: '{% if ansible_system == "Linux" %}{{ docuum_os_map[ansible_system] }}{{ docuum_os_suffix | default("-gnu") }}{% else %}{{ docuum_os_map[ansible_system] }}{% endif %}'
+docuum_arch: '{{ ansible_architecture }}'
 docuum_platform: '{{ docuum_arch }}-{{ docuum_os }}'
 docuum_url: '{{ docuum_mirror }}/v{{ docuum_ver }}/docuum-{{ docuum_platform }}{{ docuum_dotexe | default("") }}'
 docuum_install_exe: '{{ docuum_install_dir }}/docuum-{{ docuum_ver }}-{{ docuum_platform }}{{ docuum_dotexe | default("") }}'

@@ -1,2 +1,2 @@
 ---
-docuum_os: unknown-linux-musl
+docuum_os_suffix: -musl
