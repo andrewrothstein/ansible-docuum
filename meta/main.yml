@@ -13,17 +13,14 @@ galaxy_info:
     - name: Debian
       versions:
         - bullseye
-        - buster
     - name: EL
       versions:
-        - 8
         - 9
     - name: Fedora
       versions:
         - 36
     - name: Ubuntu
       versions:
-        - focal
         - jammy
   galaxy_tags:
     - development
