@@ -21,6 +21,7 @@ galaxy_info:
         - 36
     - name: Ubuntu
       versions:
+        - focal
         - jammy
   galaxy_tags:
     - development
