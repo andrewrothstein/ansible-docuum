@@ -31,4 +31,4 @@ dl_ver() {
     dl $app $ver pc-windows-msvc x86_64 .exe
 }
 
-dl_ver docuum ${1:-0.21.1}
+dl_ver docuum ${1:-0.22.2}
