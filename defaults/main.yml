@@ -1,6 +1,6 @@
 ---
 # defaults file for docuum
-docuum_ver: 0.22.2
+docuum_ver: 0.22.4
 docuum_os_map:
   Linux: unknown-linux
   Windows: pc-windows-msvc
@@ -32,3 +32,21 @@ docuum_checksums:
     x86_64-unknown-linux-musl: sha256:1f67109e5656b580484de44b46b9a3299b07be74e1cd76952a467905de461960
     # https://github.com/stepchowfun/docuum/releases/download/v0.22.2/docuum-x86_64-pc-windows-msvc.exe
     x86_64-pc-windows-msvc: sha256:97490c732a1160bad0284320787f1ac22063dff2c000a1dd1f94b48048f72631
+  '0.22.3':
+    # https://github.com/stepchowfun/docuum/releases/download/v0.22.3/docuum-x86_64-apple-darwin
+    x86_64-apple-darwin: sha256:131e8759eac4bd9339fb07040e54208449a5a4c9769d141824167ed91500cc99
+    # https://github.com/stepchowfun/docuum/releases/download/v0.22.3/docuum-x86_64-unknown-linux-gnu
+    x86_64-unknown-linux-gnu: sha256:efc01345a37d6e3e1f68e9b684a7c5e1d828d5682bc5dcf4b265d7c4d208656c
+    # https://github.com/stepchowfun/docuum/releases/download/v0.22.3/docuum-x86_64-unknown-linux-musl
+    x86_64-unknown-linux-musl: sha256:d1eb2e8f5bd0f8fa654ddf54f61c9231356c88f8cc05f1e87ac714b1929c2d39
+    # https://github.com/stepchowfun/docuum/releases/download/v0.22.3/docuum-x86_64-pc-windows-msvc.exe
+    x86_64-pc-windows-msvc: sha256:b96419ecbc4fb28fd2eddc700069e0de3cc9d09b1866e6d3f6ef90f5245d21c2
+  '0.22.4':
+    # https://github.com/stepchowfun/docuum/releases/download/v0.22.4/docuum-x86_64-apple-darwin
+    x86_64-apple-darwin: sha256:20239bfb57112df7523ee97e0b78fc010db7c4c1a74ee433563748b9d9c39b28
+    # https://github.com/stepchowfun/docuum/releases/download/v0.22.4/docuum-x86_64-unknown-linux-gnu
+    x86_64-unknown-linux-gnu: sha256:fb657049bf5878bb8abc5cb7f6e68fcc87f99e51a004b2b3b72ba3428aec0e37
+    # https://github.com/stepchowfun/docuum/releases/download/v0.22.4/docuum-x86_64-unknown-linux-musl
+    x86_64-unknown-linux-musl: sha256:62505144305a299f694862243d6259a78575db41b3b0822fd0d7f01b3294c47a
+    # https://github.com/stepchowfun/docuum/releases/download/v0.22.4/docuum-x86_64-pc-windows-msvc.exe
+    x86_64-pc-windows-msvc: sha256:dd518973e2a8564bb7b01e5ff32766ec7eb0f41665168b5120598d2d43b166e6
