@@ -1,5 +1,6 @@
 ---
-- include_role:
+- name: Creating systemd service
+  ansible.builtin.include_role:
     name: andrewrothstein.systemd_service
   vars:
     systemd_service_activate: '{{ docuum_config.activate }}'

@@ -1,16 +1,18 @@
 ---
-- hosts: all
+- name: Testing andrewrothstein.docuum
+  hosts: all
   vars:
     docker_engine_manage_service: false
     docuum_config:
       enable: false
       activate: false
   roles:
-  - andrewrothstein.docker_engine
-  - role: '{{ playbook_dir }}'
+    - role: andrewrothstein.docker_engine
+    - role: '{{ playbook_dir }}'
   tasks:
-  - command: /usr/local/bin/docuum --version
-    register: docuum_test_output
-  - name: docuum --version
-    debug:
-      msg: '{{ docuum_test_output.stdout }}'
+    - name: Executing 'docuum --version'
+      ansible.builtin.command: /usr/local/bin/docuum --version
+      register: docuum_test_output
+    - name: Output from 'docuum --version'
+      ansible.builtin.debug:
+        msg: '{{ docuum_test_output.stdout }}'
