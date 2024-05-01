@@ -24,7 +24,5 @@
     src: '{{ docuum_install_exe }}'
     dest: '{{ docuum_link }}'
     state: link
-- name: Creating the service account
-  ansible.builtin.include_tasks: service-account.yml
 - name: Configuring {{ docuum_supervisor | default("systemd") }} service
   ansible.builtin.include_tasks: '{{ docuum_supervisor | default("systemd") }}.yml'

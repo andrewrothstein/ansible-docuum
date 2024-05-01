@@ -3,11 +3,13 @@
   ansible.builtin.include_role:
     name: andrewrothstein.systemd_service
   vars:
-    systemd_service_activate: '{{ docuum_config.activate }}'
     systemd_service_def:
+      activate: '{{ docuum_config.activate }}'
       name: '{{ docuum_config.name | default("docuum") }}'
-      user: '{{ docuum_config.user | default("docuum") }}'
-      group: '{{ docuum_config.group | default("docuum") }}'
+      account:
+        enabled: true
+        user: '{{ docuum_config.user | default("docuum") }}'
+        group: '{{ docuum_config.group | default("docuum") }}'
       description: Docuum
       start:
         exe: /usr/local/bin/docuum
