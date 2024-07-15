@@ -1,6 +1,6 @@
 ---
 # defaults file for docuum
-docuum_ver: 0.24.0
+docuum_ver: 0.25.0
 docuum_os_map:
   Linux: unknown-linux
   Windows: pc-windows-msvc
@@ -68,3 +68,12 @@ docuum_checksums:
     x86_64-unknown-linux-musl: sha256:cd4b4232df792c013b792e9a6b19d284ae85ed8e3c11b7aef3d066ed999d7c34
     # https://github.com/stepchowfun/docuum/releases/download/v0.24.0/docuum-x86_64-pc-windows-msvc.exe
     x86_64-pc-windows-msvc: sha256:55bbba500cf35903e22d5e23006b96fe15d0dbfc239b7bde2214ba75971824e7
+  '0.25.0':
+    # https://github.com/stepchowfun/docuum/releases/download/v0.25.0/docuum-x86_64-apple-darwin
+    x86_64-apple-darwin: sha256:dcf1bcd05d03bc8fb95e982d14f64899250c4ecb3d1de66a58c5c1ff5b6a8096
+    # https://github.com/stepchowfun/docuum/releases/download/v0.25.0/docuum-x86_64-unknown-linux-gnu
+    x86_64-unknown-linux-gnu: sha256:73b32ed958a5e647397404bcc6ea7bb1492014a7e89ab37218738c36f4a494ff
+    # https://github.com/stepchowfun/docuum/releases/download/v0.25.0/docuum-x86_64-unknown-linux-musl
+    x86_64-unknown-linux-musl: sha256:8c793f00859b4a76033cfd9383c0d0a83e133d62efd36dbeb9448ec1d2762b7e
+    # https://github.com/stepchowfun/docuum/releases/download/v0.25.0/docuum-x86_64-pc-windows-msvc.exe
+    x86_64-pc-windows-msvc: sha256:8c5eb33d540a2f19ea340330273d8b0027d66964287e43bce26f7f133c3fe901
