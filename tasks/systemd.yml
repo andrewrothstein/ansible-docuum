@@ -4,12 +4,15 @@
     name: andrewrothstein.systemd_service
   vars:
     systemd_service_def:
+      enabled: '{{ docuum_config.enabled }}'
       activate: '{{ docuum_config.activate }}'
       name: '{{ docuum_config.name | default("docuum") }}'
       account:
-        enabled: true
+        enabled: '{{ docuum_config.enabled }}'
         user: '{{ docuum_config.user | default("docuum") }}'
-        group: '{{ docuum_config.group | default("docuum") }}'
+        group: '{{ docuum_group }}'
+        append: true
+        groups: [docker]
       description: Docuum
       start:
         exe: /usr/local/bin/docuum
@@ -18,7 +21,7 @@
         dir: /etc/docuum
         filename: env
         data:
-          DOCUUM_THRESHOLD: '{{ docuum_config.threshold | default("10GB") }}'
+          DOCUUM_THRESHOLD: '{{ docuum_config.threshold | default("100GB") }}'
       restart:
         policy: on-failure
       after:

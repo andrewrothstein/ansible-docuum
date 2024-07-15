@@ -9,9 +9,9 @@ docuum_mirror: https://github.com/stepchowfun/docuum/releases/download
 docuum_install_dir: /usr/local/bin
 
 docuum_config:
-  enable: true
+  enabled: true
   activate: true
-  threshold: 10GB
+  threshold: 100GB
 
 docuum_checksums:
   '0.21.1':

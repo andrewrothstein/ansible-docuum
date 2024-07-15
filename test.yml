@@ -4,8 +4,11 @@
   vars:
     docker_engine_manage_service: false
     docuum_config:
-      enable: false
+#      enabled: true
+#      activate: true
+      enabled: false
       activate: false
+      threshold: 100GB
   roles:
     - role: andrewrothstein.docker_engine
     - role: '{{ playbook_dir }}'
